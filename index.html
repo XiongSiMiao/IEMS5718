@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Xiong's Shopping Website</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a> >> <a href="#">All Products</a>
+    </nav>
+
+    <aside class="shopping-cart">
+        <div class="cart-title">Shopping List $<span id="total">0</span></div>
+        <div class="cart-content">
+            <p>To buy</p>
+            <button id="checkout">Checkout</button>
+        </div>
+    </aside>
+
+    <main>
+        <aside class="categories">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#" data-category="Toys">Toys</a></li>
+                <li><a href="#" data-category="Pets">Pets</a></li>
+                <li><a href="#" data-category="Sports">Sports</a></li>
+            </ul>
+        </aside>
+        
+        <section class="product-list">
+            <div class="product" data-category="Toys">
+                <a href="product_pikachu.html">
+                    <img src="images/pikachu_thumbnail.jpg" alt="Pikachu">
+                    <p>Pikachu</p>
+                </a>
+                <p>$169.9 <button class="add-to-cart" data-name="Pikachu" data-price="169.9" data-img="images/pikachu_thumbnail.jpg">Add</button></p>
+            </div>            
+            <div class="product" data-category="Pets">
+                <a href="product_catfood.html">
+                    <img src="images/catfood_thumbnail.jpg" alt="Cat food">
+                    <p>Catfood</p>
+                </a>
+                <p>$109.9 <button class="add-to-cart" data-name="Catfood" data-price="109.9" data-img="images/catfood_thumb.jpg">Add</button></p>
+            </div>
+            <div class="product" data-category="Sports">
+                <a href="product_basketball.html">
+                    <img src="images/basketball_thumbnail.jpg" alt="Basketball">
+                    <p>Basketball</p>
+                </a>
+                <p>$79.9<button class="add-to-cart" data-name="Basketball" data-price="79.9" data-img="images/basketball_thumb.jpg">Add</button></p>
+            </div>
+        </section>     
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 Xiong's Shopping Website. All righte reserved.</p>
+</body>
+</html>
